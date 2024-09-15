@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <cstdlib> // header file for rand and srand
+#include <ctime> // for time function
 using namespace std;
 
 int main()
@@ -14,6 +15,9 @@ int main()
     const int minValue = 1; // minimum dice value
     const int maxValue =6; // maximum dice value
     int random1, random2; // random dice variable values
+    
+    unsigned seed = time(0); // gets system time
+    srand(seed); // gets new seed for random number generator every time the sytem time changes
     
     random1 = (rand()% (maxValue-minValue + 1)) + minValue;
     random2 = (rand()% (maxValue-minValue +1)) + minValue;
