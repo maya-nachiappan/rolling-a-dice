@@ -1,0 +1,1 @@
+This is a program to get two different random dice values each time a dice is rolled, using a random number generator, rand and srand. The maximum and minimum values that can be obtained are also set as 6 and 1, like regular dice values.
