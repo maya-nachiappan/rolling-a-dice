@@ -19,8 +19,8 @@ int main()
     unsigned seed = time(0); // gets system time
     srand(seed); // gets new seed for random number generator every time the sytem time changes
     
-    random1 = (rand()% (maxValue-minValue + 1)) + minValue;
-    random2 = (rand()% (maxValue-minValue +1)) + minValue;
+    random1 = (rand()% (maxValue-minValue + 1)) + minValue; // gets the first random value
+    random2 = (rand()% (maxValue-minValue +1)) + minValue; // gets the second random value
     
     cout << random1 << endl;
     cout << random2 << endl;
